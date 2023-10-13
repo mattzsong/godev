@@ -5,22 +5,21 @@ type MeasuringUnits string
 type UnitsMetric MeasuringUnits
 
 const (
-	Gram UnitsMetric = "g"
-	Kilogram UnitsMetric = "kg"
+	Gram      UnitsMetric = "g"
+	Kilogram  UnitsMetric = "kg"
 	MiliLiter UnitsMetric = "ml"
-	Liter UnitsMetric = "l"
-	Celsius UnitsMetric = "C"
+	Liter     UnitsMetric = "l"
+	Celsius   UnitsMetric = "C"
 )
 
 type UnitsImperial MeasuringUnits
 
 const (
-
-	dash UnitsImperial = "dash"
-	tsp UnitsImperial = "tsp"
-	tbsp UnitsImperial = "tbsp"
-	cup UnitsImperial = "cup"
-	pound UnitsImperial = "pound"
-	fluidOunce UnitsImperial = "floz"
+	Dash       UnitsImperial = "dash"
+	Tsp        UnitsImperial = "tsp"
+	Tbsp       UnitsImperial = "tbsp"
+	Cup        UnitsImperial = "cup"
+	Pound      UnitsImperial = "pound"
+	FluidOunce UnitsImperial = "floz"
 	Fahrenheit UnitsImperial = "F"
 )

@@ -10,5 +10,5 @@ and other tabs to support functionality of CRUD
 ## Tools
 MongoDB for DB \
 Go in Backend, net/http to serve requests \
-Chi for webapp frameworkb \
+Chi for webapp framework \
 React.js and webpack for Frontend

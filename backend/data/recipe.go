@@ -1,17 +1,17 @@
 package data
 
-import "github.com/mattzsong/godev-backend/types"
+import (
+	"github.com/mattzsong/godev-backend/types"
+)
 
 type Ingredient struct {
-	ingredientName string,
-	amount float32,
-	unit MeasuringUnits,
+	IngredientName string
+	Amount         float32
+	Unit           types.MeasuringUnits
 }
 
 type Recipe struct {
-	recipe_name string,
-	ingredientList []Ingredient,
-	description string,
+	RecipeName     string       `bson:"recipeName" json:"recipeName"`
+	IngredientList []Ingredient `bson:"ingredientList" json:"ingredientList"`
+	Description    string       `bson:"description" json:"description"`
 }
-
-

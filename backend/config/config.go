@@ -8,13 +8,13 @@ import (
 )
 
 type EnvVars struct {
-	MONGODB_URI string,
-	MONGODB_NAME string,
-	PORT string
+	MONGODB_URI  string
+	MONGODB_NAME string
+	PORT         string
 }
 
 func LoadConfig() (config EnvVars, err error) {
-	env := os.Getenv("GO_ENV")
+	env := os.Getenv("GET_ENV")
 	if env == "production" {
 		return EnvVars{
 			MONGODB_URI:  os.Getenv("MONGODB_URI"),
@@ -24,7 +24,7 @@ func LoadConfig() (config EnvVars, err error) {
 	}
 
 	viper.AddConfigPath(".")
-	viper.SetConfigName("app")
+	viper.SetConfigName(".env")
 	viper.SetConfigType("env")
 
 	viper.AutomaticEnv()
